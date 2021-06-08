@@ -1,4 +1,42 @@
+.title {
+  text-align: center;
+}
+
 .Pokemon {
   display: flex;
   flex-wrap: wrap;
+
+  &__list {
+    list-style: none;
+    width: 150px;
+    margin: 20px 20px;
+    border: solid 2px rgb(75, 38, 75);
+    border-radius: 20px;
+    background-image: url(https://i.ytimg.com/vi/qqOYmVkB6P8/maxresdefault.jpg);
+  }
+  &__img {
+    background-image: url(https://image.freepik.com/vector-gratis/fondo-galaxia-espacial_53876-94178.jpg);
+    width: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  &__title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: white;
+  }
+  &__type {
+    display: flex;
+    text-align: center;
+  }
+  &__typelist {
+    margin: auto;
+    padding: 4px;
+    border: solid 1px violet;
+    border-radius: 20px;
+    text-transform: capitalize;
+    background-color: white;
+    font-weight: bold;
+  }
 }
