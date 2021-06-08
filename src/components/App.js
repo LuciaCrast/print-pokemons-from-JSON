@@ -1,11 +1,14 @@
 import "../styles/App.css";
+import data from "../data.json";
+import { PokeList } from "./PokeList";
+import React, { useState } from "react";
 
 function App() {
+  const [Pokemons] = useState(data);
   return (
     <div className="App">
-      <header className="App-header">
-        <p>Hola Mundo</p>
-      </header>
+      <h1>Mi lista Pokemon</h1>
+      <PokeList />
     </div>
   );
 }
