@@ -12,11 +12,9 @@ function Pokemon(props) {
       <p className="Pokemon__type">
         {props.data.types.map((type, index) => {
           return (
-            <ul className="Pokemon__ulList">
-              <li className="Pokemon__typelist" key={index}>
-                {type}
-              </li>
-            </ul>
+            <span className="Pokemon__typelist" key={index}>
+              {type}
+            </span>
           );
         })}
       </p>
