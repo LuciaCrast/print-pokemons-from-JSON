@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function Pokemon(props) {
   return (
     <li className="Pokemon__list">
@@ -23,3 +25,9 @@ function Pokemon(props) {
 }
 
 export { Pokemon };
+
+Pokemon.propTypes = {
+  name: PropTypes.string,
+  url: PropTypes.string,
+  pokemon: PropTypes.object,
+};
