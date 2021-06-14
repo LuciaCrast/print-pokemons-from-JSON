@@ -30,8 +30,13 @@
     display: flex;
     text-align: center;
   }
+  &__ulList {
+    margin: 0px;
+    padding: 0px;
+  }
   &__typelist {
-    margin: auto;
+    list-style: none;
+    margin-left: 12px;
     padding: 4px;
     border: solid 1px violet;
     border-radius: 20px;

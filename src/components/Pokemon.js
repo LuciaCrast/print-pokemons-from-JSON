@@ -8,8 +8,14 @@ function Pokemon(props) {
       />
       <h2 className="Pokemon__title">{props.data.name}</h2>
       <p className="Pokemon__type">
-        {props.data.types.map((type) => {
-          return <li className="Pokemon__typelist">{type}</li>;
+        {props.data.types.map((type, index) => {
+          return (
+            <ul className="Pokemon__ulList">
+              <li className="Pokemon__typelist" key={index}>
+                {type}
+              </li>
+            </ul>
+          );
         })}
       </p>
     </li>

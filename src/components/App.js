@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="title">Mi lista Pokemon</h1>
-      <PokeList />
+      <PokeList data={data} />
     </div>
   );
 }
